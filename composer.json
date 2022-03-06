@@ -19,12 +19,12 @@
     },
     "autoload": {
       "psr-4": {
-        "FreebirdAirlines\\Amqp\\": "src/FreebirdAirlines/Amqp/"
+        "FreebirdAirlines\\Amqp\\": "src"
       }
     },
     "autoload-dev": {
       "psr-4": {
-        "FreebirdAirlines\\Amqp\\Tests\\": "tests/"
+        "FreebirdAirlines\\Amqp\\Tests\\": "tests"
       }
     },
     "minimum-stability": "dev",
