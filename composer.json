@@ -1,8 +1,8 @@
 {
-    "name": "freebird-airlines/laravel-amqplib",
+    "name": "freebird-airlines/laravel-amqp",
     "description": "Laravel wrapper for php-amqplib",
     "license": "MIT",
-    "keywords": ["laravel", "lumen", "amqplib"],
+    "keywords": ["laravel", "lumen", "amqp"],
     "authors": [
       {
         "name": "Tolga Boztuna",
