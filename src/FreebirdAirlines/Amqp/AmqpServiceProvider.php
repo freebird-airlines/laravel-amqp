@@ -1,6 +1,6 @@
 <?php
 
-namespace FreebirdAirlines\Amqp\Providers;
+namespace FreebirdAirlines\Amqp;
 
 use Illuminate\Support\ServiceProvider;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
