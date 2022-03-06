@@ -25,5 +25,15 @@
       "psr-4": {
         "FreebirdAirlines\\Amqp\\Tests\\": "tests/"
       }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "FreebirdAirlines\\Amqp\\AmqpServiceProvider"
+            ],
+            "aliases": {
+              "Amqp": "FreebirdAirlines\\Amqp\\Facades\\Amqp"
+            }
+        }
+    },
 }
