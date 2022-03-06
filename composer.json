@@ -1,6 +1,7 @@
 {
     "name": "freebird-airlines/laravel-amqp",
     "description": "Laravel wrapper for php-amqplib",
+    "type": "library",
     "license": "MIT",
     "keywords": ["laravel", "lumen", "amqp"],
     "authors": [
@@ -25,6 +26,11 @@
       "psr-4": {
         "FreebirdAirlines\\Amqp\\Tests\\": "tests/"
       }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
     },
     "extra": {
         "laravel": {
