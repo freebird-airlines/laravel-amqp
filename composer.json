@@ -1,0 +1,29 @@
+{
+    "name": "freebird-airlines/laravel-amqplib",
+    "description": "Laravel wrapper for php-amqplib",
+    "license": "MIT",
+    "keywords": ["laravel", "lumen", "amqplib"],
+    "authors": [
+      {
+        "name": "Tolga Boztuna",
+        "email": "tolga.boztuna@freebirdairlines.com"
+      }
+    ],
+    "require": {
+        "php-amqplib/php-amqplib": "^3.1",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "autoload": {
+      "psr-4": {
+        "FreebirdAirlines\\Amqp\\": "src/FreebirdAirlines/Amqp/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "FreebirdAirlines\\Amqp\\Tests\\": "tests/"
+      }
+    }
+}
