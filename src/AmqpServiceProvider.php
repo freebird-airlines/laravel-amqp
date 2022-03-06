@@ -34,7 +34,7 @@ class AmqpServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/amqp.php' => config_path('amqp.php'),
+            __DIR__ . '/config/amqp.php' => config_path('amqp.php'),
         ]);
     }
 
