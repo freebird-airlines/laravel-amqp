@@ -35,5 +35,5 @@
               "Amqp": "FreebirdAirlines\\Amqp\\Facades\\Amqp"
             }
         }
-    },
+    }
 }
