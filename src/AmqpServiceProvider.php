@@ -33,7 +33,7 @@ class AmqpServiceProvider extends ServiceProvider
                 '/',
                 ['verify_peer' => true]
             );
-        })
+        });
     }
 
     /**
