@@ -17,13 +17,23 @@ class AmqpServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('Amqp', function ($app) {
-            return new AMQPStreamConnection(
+            if (!config('amqp.connection.ssl')) {
+                return new AMQPStreamConnection(
+                    config('amqp.connection.host'),
+                    config('amqp.connection.port'),
+                    config('amqp.connection.username'),
+                    config('amqp.connection.password')
+                );
+            }
+            return new AMQPSSLConnection(
                 config('amqp.connection.host'),
                 config('amqp.connection.port'),
                 config('amqp.connection.username'),
-                config('amqp.connection.password')
+                config('amqp.connection.password'),
+                '/',
+                ['verify_peer' => true]
             );
-        });
+        })
     }
 
     /**
