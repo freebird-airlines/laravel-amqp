@@ -3,6 +3,7 @@
 namespace FreebirdAirlines\Amqp;
 
 use Illuminate\Support\ServiceProvider;
+use PhpAmqpLib\Connection\AMQPSSLConnection;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 
 class AmqpServiceProvider extends ServiceProvider
